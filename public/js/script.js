@@ -3,13 +3,15 @@
 
 // Index page
 try {
-    const registerButton = document.querySelector('.webinar-main-button');
+    const registerButtons = document.querySelectorAll('.webinar-main-button');
     const modalBackdrop = document.querySelector('.modal-backdrop');
     const modalCloserElements = document.querySelectorAll('[data-modal-close]');
     const form = document.querySelector('.form');
 
-    registerButton.addEventListener('click', () => {
-        modalBackdrop.classList.add('modal-backdrop--open')
+    registerButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modalBackdrop.classList.add('modal-backdrop--open')
+        })
     })
 
     function closeModal() {
