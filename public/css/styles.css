@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -39,8 +37,7 @@ button:focus {
 }
 
 body {
-    font-family: "Poppins", "Arial", sans-serif;
-    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
     background-image: url("../img/bg@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -48,13 +45,7 @@ body {
     background-attachment: fixed;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
     body {
         background-image: url("../img/bg@2x.jpg");
     }
@@ -82,46 +73,34 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .webinar-date {
-    width: max-content;
-    padding: 0.625rem 1.25rem;
-    background-color: #3D3A54;
-    border-radius: 0 0 1.125rem 1.125rem;
-    margin-right: 1.875rem;
-}
-
-.webinar-date-value {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 1.25rem;
-    padding-top: 0.3rem;
+    gap: 0.75rem;
+    width: max-content;
+    padding: 1rem 1.25rem;
+    border-radius: 0 0 1.125rem 1.125rem;
+    background-image: linear-gradient(180deg, #F5E8F9 0%, #DFC8E7 49.53%, #F5E7F8 100%);
 }
 
 .webinar-date-title {
-    font-weight: 300;
-    font-size: 0.875rem;
-    text-align: center;
-    color: rgba(256, 256, 256, 0.6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
 }
 
 .webinar-date-date {
+    font-family: "Unbounded", Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0;
-    color: #D697FD;
-    margin-right: 0.75rem;
-    padding-right: 0.75rem;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
 }
 
 .purple {
     color: #D697FD;
-}
-
-.webinar-date-time {
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    color: white;
 }
 
 .webinar-mentor h2 {
@@ -146,27 +125,15 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .webinar-title {
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-    border-left: 0.635rem solid #D697FD;
-    background-image: url("../img/flag.png");
-    background-repeat: no-repeat;
-    background-size: 7rem;
-    background-position: 42% -2rem;
-}
-
-.webinar-title h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    line-height: 1;
-}
-
-.webinar-title p {
-    line-height: 1;
-    font-size: 1.5rem;
+    width: max-content;
+    padding: 0.625rem 1.5rem;
+    border-radius: 1.75rem;
+    font-family: "Unbounded", Arial, sans-serif;
+    font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: 0;
-
+    color: #34253A;
+    text-align: center;
+    background: linear-gradient(180deg, #F5E8F9 0%, #DFC8E7 49.53%, #F5E7F8 100%);
 }
 
 .webinar-main-mentor img {
@@ -190,7 +157,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .webinar-main-info {
     width: 32rem;
-    padding-top: 3rem;
+    padding-top: 1.25rem;
 }
 
 .webinar-main-info--telegram {
@@ -199,26 +166,30 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .webinar-main-title {
-    font-size: 1.5rem;
+    font-family: "Unbounded", sans-serif;
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 1.25rem;
+}
+
+.webinar-main-title span {
+    color: #9018BE
 }
 
 .webinar-main-title--telegram {
+    padding-top: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 0;
 }
 
 .webinar-main-ul {
     margin: 0 0 4rem;
-    padding: 0;
+    padding: 2.5rem 0 0;
     list-style-type: none;
 }
 
 .webinar-main-li {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 1.125rem;
 }
 
@@ -233,12 +204,14 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .webinar-main-disc img {
-    height: 1.5rem;
+    width: 100%;
 }
 
 .webinar-main-text {
-    font-size: 1.125rem;
-    color: rgba(256, 256, 256, 0.6);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
 }
 
 .webinar-main-hint strong {
@@ -247,27 +220,14 @@ only screen and (                min-resolution: 2dppx) {
 
 .webinar-main-button {
     position: relative;
-    height: 4.5rem;
-    border-radius: 1.5rem;
-    background: linear-gradient(180deg, #EB09EF 0%, #DD1A8F 100%);
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    font-weight: 500;
-    transition: all 0.1s ease;
-}
-
-.webinar-main-button::after {
-    content: "";
-    position: absolute;
-    top: -1rem;
-    right: -6rem;
-    display: block;
-    width: 6rem;
     height: 6rem;
-    background-image: url("../img/arrow.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    border-radius: 1.5rem;
+    background: linear-gradient(180deg, #A442F0 0%, #CD42F0 100%);
+    color: #FFFFFF;
+    transition: all 0.1s ease;
+    font-family: "Unbounded", sans-serif !important;
+    font-size: 1.75rem;
+    line-height: 35px;
 }
 
 .webinar-telegram-button {
@@ -275,9 +235,9 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    height: 4.5rem;
+    height: 6rem;
     border-radius: 1.5rem;
-    background: linear-gradient(180deg, #EB09EF 0%, #DD1A8F 100%);
+    background: linear-gradient(180deg, #A442F0 0%, #CD42F0 100%);
     font-size: 1.5rem;
     color: #FFFFFF;
     font-weight: 500;
@@ -348,13 +308,17 @@ only screen and (                min-resolution: 2dppx) {
     padding: 2.5rem;
     background-color: #fff;
     border-radius: 1.125rem;
-    color: rgba(0, 0, 0, 0.60);
 }
 
 .form-heading {
+    font-family: "Unbounded", sans-serif;
     margin-bottom: 0.75rem;
     font-size: 1.75rem;
     color: #000000;
+}
+
+.form-heading span {
+    color: #7019FF;
 }
 
 .form-text {
@@ -379,14 +343,15 @@ only screen and (                min-resolution: 2dppx) {
     background-color: #F3F7F8;
     font-size: 1.125rem;
     padding: 0 1.125rem;
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .form-button {
-    height: 3rem;
+    height: 4rem;
     border-radius: 0.75rem;
-    background: linear-gradient(180deg, #EB09EF 0%, #DD1A8F 100%);
-    font-size: 1.125rem;
+    background: linear-gradient(180deg, #A442F0 0%, #CD42F0 100%);
+    font-size: 1.5rem;
+    font-family: "Unbounded", sans-serif;
     color: #FFFFFF;
     font-weight: 500;
     transition: all 0.1s ease;
@@ -405,6 +370,23 @@ only screen and (                min-resolution: 2dppx) {
     cursor: pointer;
 }
 
+.mobile-mentor {
+    display: none;
+    padding: 1.5rem 0;
+}
+
+.mobile-mentor img {
+    width: 100%;
+}
+
+.mobile-mentor-inner {
+    padding: 1rem;
+}
+
+.mobile-mentor-inner .webinar-main-button {
+    margin-top: -4rem;
+}
+
 @media (min-width: 576px) {
     .container, .container-sm {
         max-width: 540px;
@@ -416,7 +398,6 @@ only screen and (                min-resolution: 2dppx) {
         max-width: 720px;
     }
 }
-
 
 @media (min-width: 992px) {
     .container {
@@ -445,9 +426,21 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media (max-width: 1070px) {
+    .webinar {
+        display: block;
+    }
+
     body {
-        background-image: url("../img/bg-mobile.jpg");
-        background-size: cover;
+        background-color: #FFF4FF;
+        background-image: none;
+    }
+
+    .desktop-elements {
+        display: none;
+    }
+
+    .mobile-mentor {
+        display: block;
     }
 
     .webinar-date {
@@ -455,17 +448,11 @@ only screen and (                min-resolution: 2dppx) {
         margin-right: 0;
     }
 
-    .webinar-date-value {
-        justify-content: center;
+    .webinar-title {
+        margin: 0 auto;
     }
 
-    .webinar-main-button::after {
-        display: none;
-    }
-
-    .webinar-mentor {
-        width: 100%;
-        padding-top: 1rem;
+    .webinar-main-title {
         text-align: center;
     }
 
