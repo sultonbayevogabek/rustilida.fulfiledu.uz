@@ -8,7 +8,7 @@ if (user && user?.name && user?.phone && user?.time) {
     formData.append('Telefon raqami', user?.phone);
     formData.append(`Ro'yxatdan o'tgan vaqti`, user?.time);
 
-    fetch('https://script.google.com/macros/s/AKfycbykNRk6zvtZszZ_f3uoEvBWYV2EsdddyitGYwDmfFIt4oVj6L4EoT_6NOY7Hp_5sneTyw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzmN9e5w-_PGUPsUPkDCxU1tbnKBvsGLLl8EbdjuoTIDUoXPoceH6Or_3E5q4A6Ej0KhQ/exec', {
         method: 'POST',
         body: formData
     })
