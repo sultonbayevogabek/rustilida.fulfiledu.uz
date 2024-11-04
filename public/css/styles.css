@@ -546,3 +546,10 @@ body {
     font-family: "Inter", sans-serif;
     color: #46494e;
 }
+
+
+@media (max-width: 1200px) {
+   .powered-by {
+       display: none;
+   }
+}
