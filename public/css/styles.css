@@ -230,6 +230,7 @@ body {
     line-height: 35px;
 }
 
+
 .webinar-telegram-button {
     display: flex;
     align-items: center;
@@ -237,7 +238,8 @@ body {
     margin-top: 2rem;
     height: 6rem;
     border-radius: 1.5rem;
-    background: linear-gradient(180deg, #A442F0 0%, #CD42F0 100%);
+    /*background: linear-gradient(180deg, #28B6F6 0%, #28B6F6 100%);*/
+    background-color:  #28B6F6;
     font-size: 1.5rem;
     color: #FFFFFF;
     font-weight: 500;
@@ -545,4 +547,11 @@ body {
     font-size: 0.75rem;
     font-family: "Inter", sans-serif;
     color: #46494e;
+}
+
+
+@media (max-width: 1200px) {
+   .powered-by {
+       display: none;
+   }
 }
