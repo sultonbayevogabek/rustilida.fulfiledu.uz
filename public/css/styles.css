@@ -38,7 +38,7 @@ button:focus {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: url("../img/bg@1x.jpg");
+    background-image: url("../img/bg@1x.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -47,7 +47,7 @@ body {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
     body {
-        background-image: url("../img/bg@2x.jpg");
+        background-image: url("../img/bg@2x.webp");
     }
 }
 
