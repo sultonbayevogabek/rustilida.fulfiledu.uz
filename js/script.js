@@ -37,7 +37,7 @@ try {
 
         const submitButton = e.target.querySelector('.form-button');
         const name = e.target.querySelector('#name').value.trim();
-        const phone = e.target.querySelector('#phone').value?.replace(/[^0-9]/g, '');
+        const phone = '+' + e.target.querySelector('#phone').value?.replace(/[^0-9]/g, '');
 
         if (!name.length) {
             formAlert.textContent = 'Ismingizni kiriting';
